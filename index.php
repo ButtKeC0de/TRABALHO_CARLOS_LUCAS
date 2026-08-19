@@ -48,6 +48,11 @@
     <div id="cadastro_2">
 
 
+
+
+
+
+    
     </div>
 
 </body>
@@ -94,16 +99,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         mysqli_stmt_execute($stmt);
 
 
-        if (mysqli_stmt_affected_rows($stmt) > 0) {
-            echo "Prato cadastrado com sucesso!";
-        } else {
-            echo "Erro ao cadastrar prato.";
-        }
-    } else {
-        echo "Erro ao cadastrar usuário.";
-
-    }
-
+        
 }
 
 ?>
