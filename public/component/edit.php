@@ -1,5 +1,5 @@
 <?php
-require_once "infra/db/connect.php";
+require_once __DIR__ . '/../../infra/db/connect.php';
 
 $mensagem = "";
 $prato = null;
@@ -94,7 +94,7 @@ if (!$prato && $_SERVER['REQUEST_METHOD'] !== 'POST') {
         <br><br>
 
         <button type="submit">Salvar Alterações</button>
-        <a href="index.php">Cancelar</a>
+          <a href="table.php?">Voltar para a lista</a>
     </form>
 
 </body>

@@ -33,7 +33,7 @@ $resultadoUsuario = $conn->query($sqlUsuario);
                 <td><?= htmlspecialchars($linha['usuario']) ?></td>
                 <td>
 
-                    <a href="editar_prato.php?id=<?= $linha['idPrato'] ?>">Editar</a>
+                    <a href="edit.php?id=<?= $linha['idPrato'] ?>">Editar</a>
 
                    
                     <form method="POST" action="deletar_prato.php" style="display:inline;" onsubmit="return confirm('Deseja realmente excluir o prato?');">
