@@ -1,22 +1,14 @@
-<hr>
-
-<h4>Pratos Cadastrados</h4>
-
-<table>
-
-    <tr>
-
-        <th>Prato</th>
-        <th>Usuario</th>
-
-    </tr>
-
-    <?php
-
+<?php
 require_once __DIR__ . '/../../infra/db/connect.php';
 
 
-$sqlUsuario = "SELECT * FROM usuario";
+$sqlUsuario = "SELECT 
+                    prato.id AS idPrato, 
+                    prato.nome_prato AS Prato, 
+                    usuario.nome AS usuario 
+               FROM prato 
+               INNER JOIN usuario ON prato.usuario_id = usuario.id";
+
 $resultadoUsuario = $conn->query($sqlUsuario);
 ?>
 

@@ -12,9 +12,10 @@ CREATE TABLE
 CREATE TABLE
     prato (
         id INT AUTO_INCREMENT PRIMARY KEY,
-        nome VARCHAR(100) NOT NULL,
+        nome_prato VARCHAR(100) NOT NULL,
         descricao TEXT NOT NULL,
         preco DECIMAL(10, 2) NOT NULL,
+        categoria VARCHAR(50) NOT NULL,
         usuario_id INT NOT NULL,
         FOREIGN KEY (usuario_id) REFERENCES usuario(id)
     )
