@@ -10,7 +10,7 @@
 
     <div id="cadastro">
 
-        <form method="POST" action="cadastro.php">
+       <form method="POST" action="index.php">
             <div class="login">
                 <h2>Cadastro de Usuário</h2>
                 <label>Nome:</label>
