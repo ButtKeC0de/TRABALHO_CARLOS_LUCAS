@@ -5,109 +5,141 @@
 body {
     margin: 0;
     min-height: 100vh;
+    padding: 30px;
 
-    background: linear-gradient(
-        135deg,
-        #240046,
-        #5a189a,
-        #9d4edd
-    );
+    background: linear-gradient(135deg, #240046, #9d4edd);
 
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    gap: 50px;
 
     font-family: Arial, Helvetica, sans-serif;
 }
 
 
-/* SEGURA OS DOIS BLOCOS */
+/* BLOCOS */
 
-.container {
-    width: 80%;
-    max-width: 1100px;
+#cadastro,
+#cadastro_2 {
+    width: 420px;
 
-    display: flex;
+    background: azure;
 
-    gap: 80px;
+    padding: 25px;
+
+    border-radius: 12px;
 }
 
 
-/* BLOCO DA ESQUERDA */
+/* SEGUNDO BLOCO */
 
-#cadastro {
-    width: 50%;
-    min-height: 600px;
-
-    background-color: black;
-    color: white;
-
-    padding: 35px;
-
-    border-radius: 15px;
-}
-
-
-/* BLOCO DA DIREITA */
-
-#bloco2 {
-    width: 50%;
-    min-height: 600px;
-
-    background-color: black;
-    color: white;
-
-    padding: 35px;
-
-    border-radius: 15px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-/* CADA CADASTRO DENTRO DO PRIMEIRO BLOCO */
-
-.login {
-    margin-bottom: 50px;
+#cadastro_2 {
+    height: 580px;
 }
 
 
 /* FORMULÁRIOS */
 
-form {
-    display: flex;
-    flex-direction: column;
+.login {
+    margin-bottom: 25px;
+}
 
-    gap: 8px;
+.login:last-child {
+    margin-bottom: 0;
 }
 
 
-/* INPUTS */
+/* TÍTULOS */
+
+h2 {
+    margin: 0 0 15px;
+
+    color: #4c0070;
+
+    font-size: 22px;
+}
+
+
+/* FORM */
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* TEXTOS */
+
+label {
+    font-size: 13px;
+    font-weight: bold;
+
+    margin-bottom: 4px;
+}
+
+
+/* CAMPOS */
 
 input {
-    padding: 10px;
+    width: 100%;
+    height: 35px;
 
-    border: none;
-    border-radius: 6px;
+    padding: 8px;
+
+    margin-bottom: 12px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
 
     outline: none;
 }
 
 
-/* BOTÃO */
+input:focus {
+    border-color: #7b2cbf;
+}
 
-.submit {
-    margin-top: 10px;
 
-    padding: 10px;
+/* BOTÕES */
+
+button {
+    width: 100%;
+    height: 36px;
+
+    margin-top: 4px;
 
     border: none;
-    border-radius: 6px;
+    border-radius: 5px;
 
-    background-color: #7b2cbf;
+    background: #6515a3;
+
     color: white;
 
+    font-weight: bold;
+
     cursor: pointer;
+}
+
+
+button:hover {
+    background: #7b2cbf;
+}
+
+
+/* TELAS MENORES */
+
+@media (max-width: 950px) {
+
+    body {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    #cadastro,
+    #cadastro_2 {
+        width: 100%;
+        max-width: 420px;
+    }
 }
