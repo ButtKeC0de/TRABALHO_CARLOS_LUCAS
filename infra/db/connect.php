@@ -1,12 +1,12 @@
 <?php
-    session_start();
+$host = "localhost";
+$usuario = "root";
+$senha = "root";
+$banco = "Sistema_Cadastro_de_Pratos"; 
 
-    $host = "localhost";
-    $user = "root";
-    $pass = "root";
-    $db = "Sistema_Cadastro_de_Pratos";
-    
-    $conn = new mysqli($host,$user,$pass,$db);
+$conn = new mysqli($host, $usuario, $senha, $banco);
 
-   
+if ($conn->connect_error) {
+    die("Falha na conexão: " . $conn->connect_error);
+}
 ?>
