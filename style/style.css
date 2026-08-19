@@ -61,7 +61,6 @@ h2 {
 }
 
 
-/* FORM */
 
 form {
     display: flex;
@@ -69,7 +68,6 @@ form {
 }
 
 
-/* TEXTOS */
 
 label {
     font-size: 13px;
@@ -79,7 +77,6 @@ label {
 }
 
 
-/* CAMPOS */
 
 input {
     width: 100%;
@@ -101,7 +98,6 @@ input:focus {
 }
 
 
-/* BOTÕES */
 
 button {
     width: 100%;
@@ -127,7 +123,6 @@ button:hover {
 }
 
 
-/* TELAS MENORES */
 
 @media (max-width: 950px) {
 
@@ -143,3 +138,6 @@ button:hover {
         max-width: 420px;
     }
 }
+
+
+tabela_do_sistema
