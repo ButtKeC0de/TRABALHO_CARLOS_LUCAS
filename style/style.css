@@ -18,7 +18,7 @@ body {
 }
 
 
-/* BLOCOS */
+
 
 #cadastro,
 #cadastro_2 {
@@ -32,14 +32,14 @@ body {
 }
 
 
-/* SEGUNDO BLOCO */
+
 
 #cadastro_2 {
     height: 580px;
 }
 
 
-/* FORMULÁRIOS */
+
 
 .login {
     margin-bottom: 25px;
@@ -50,7 +50,7 @@ body {
 }
 
 
-/* TÍTULOS */
+
 
 h2 {
     margin: 0 0 15px;
