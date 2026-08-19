@@ -98,4 +98,4 @@ if (!$prato && $_SERVER['REQUEST_METHOD'] !== 'POST') {
     </form>
 
 </body>
-</html>
+</html>''
